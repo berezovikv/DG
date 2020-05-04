@@ -1,0 +1,25 @@
+.flex{
+	padding: 10px 0;
+	display: flex;
+	flex-wrap: wrap;
+	max-width: 1200px;
+	margin: 0 auto; 
+}
+
+.item{
+	flex:1 1 calc(30% - 30px);
+	margin:5px;
+	box-sizing:border-box; 
+	border-radius: 2px;
+	min-width:170px; 
+	text-align:center; 
+	background-color: white;
+	box-shadow: 0 0 2px  #92cbe6;
+}
+
+
+.flex .item:last-child {
+    background-color: #92cbe6;
+    color: white;
+    padding: 50px 0;
+}

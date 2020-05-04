@@ -1,0 +1,128 @@
+.service {
+    padding-bottom: 40px;
+    display:  block;
+} 
+
+h1{
+    padding: 30px 30px;
+    text-align: center;
+}
+
+.infoBlocks{
+	display: flex;
+	flex-wrap: wrap;
+	max-width: 1200px; 
+    margin: 0 auto; 
+}
+
+.infoItemBlock{
+	flex:1 1 calc(50% - 30px); 
+	margin: 15px;
+	box-sizing:border-box;
+    padding: 30px 30px;
+    border-left: 3px solid#92cbe6;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;  
+ 
+}
+
+.infoItemBlock:before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 200%;
+    height: 100%;
+    background: linear-gradient(to right,#92cbe6 0%,#92cbe6 50%,white 50%,white 100%);
+    transition: left .7s;
+    color: black;
+}
+
+.infoItemBlock:hover:before{
+    left: 0;
+    color: white;
+  }
+  p, img {
+    position: relative;
+  }
+
+.infoImgTitle {
+    display: inline-block;
+    justify-content: space-between;
+}
+
+p {
+    text-align: justify;
+}
+
+.leftimg {
+    float: left;
+    margin: 10px 20px 10px 0;
+}
+
+.main {
+    background-color: white;
+    display:  block;
+
+}
+.products {
+    display: flex;
+    flex-wrap: wrap;
+	max-width: 1200px; 
+    margin: 0 auto;
+}
+
+.productInfo {
+    flex:1 1 calc(50% - 30px); 
+    margin: 15px;
+    text-align: center; 
+}
+.productInfoText{
+    margin-top: 17%;
+}
+.productInfoText p {
+    padding-left: 100px;
+    padding-right: 100px;
+    margin-bottom: 30px;
+}
+.button{
+    display: inline-block;
+    border-radius: 4px;
+    background-color: #92cbe6;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 20px;
+    padding: 15px;
+    width: 200px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+}
+
+.button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
+
+.button span:after {
+    content: '»';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+  }
+  
+  .button:hover span {
+    padding-right: 25px;
+  }
+  
+  .button:hover span:after {
+    opacity: 1;
+    right: 0;
+  }
+ 

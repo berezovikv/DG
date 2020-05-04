@@ -1,0 +1,20 @@
+.footer {
+    padding-top: 20px;
+    background-color: whitesmoke;
+    flex: 0 0 auto;
+    width: 100%;
+    min-height: 60px;
+    position: absolute;
+    
+   
+}
+
+.center {
+    display: flex;
+    justify-content: space-between;
+    background-color: whitesmoke;
+    display: flex;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+

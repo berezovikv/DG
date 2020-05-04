@@ -1,0 +1,1 @@
+"use strict";Object.defineProperty(exports,"__esModule",{value:!0}),exports.selectModel=void 0;var selectModel=function(e){return{type:"MODEL_SELECTED",payload:e}};exports.selectModel=selectModel;

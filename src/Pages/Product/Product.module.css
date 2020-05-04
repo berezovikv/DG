@@ -1,0 +1,48 @@
+.center {
+    display: flex;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+.pageTitle h1 {
+    float: left;
+    line-height: 150px;
+}
+.module  {
+	box-shadow: 0 0 2px  #92cbe6;
+	padding: 20px;
+	width: 20%;
+
+}
+.details {
+	box-shadow: 0 0 2px  #92cbe6;
+	padding: 20px;
+	width: 80%;
+}
+
+
+.flex{
+	padding: 10px 0;
+	display: flex;
+	flex-wrap: wrap;
+	max-width: 1200px;
+	margin: 0 auto; 
+}
+
+.item{
+	flex:1 1 calc(30% - 30px);
+	margin:5px;
+	box-sizing:border-box; 
+	border-radius: 2px;
+	min-width:170px; 
+	text-align:center; 
+	background-color: white;
+	box-shadow: 0 0 3px  #92cbe6;
+}
+
+.imgContainer {
+	height: 200px;
+    background: url('https://img.aeroexpo.com.ru/images_ar/photo-g/169927-11078063.jpg')no-repeat; 
+	background-size: contain; 
+	background-position: 50% 50%;
+}

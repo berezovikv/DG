@@ -1,0 +1,1 @@
+"use strict";function _default(){var e=0<arguments.length&&void 0!==arguments[0]?arguments[0]:null,t=1<arguments.length?arguments[1]:void 0;switch(t.type){case"MODEL_SELECTED":return t.payload;default:return e}}Object.defineProperty(exports,"__esModule",{value:!0}),exports.default=_default;
