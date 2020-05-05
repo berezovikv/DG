@@ -10,9 +10,6 @@ class  ModuleList extends Component {
             return (
                 <div className={s.item} onClick={() => this.props.selectModel(model)} key={model.id}>{model.model}
                 </div>
-
-
-
             );
         });
     }

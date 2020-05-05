@@ -12,6 +12,14 @@ body {
   flex-direction: column;
 }
 
+ul {
+    list-style-type: none;
+    font-size: 18px;
+}
+
+li:before {
+   list-style-type: none;
+}
 
 
 

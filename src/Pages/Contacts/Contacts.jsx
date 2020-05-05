@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 import s from '../About/About.module.css';
-import p from './Contacts.module.css'
-import { Form, Button, Container } from 'react-bootstrap'
+import p from './Contacts.module.css';
+import { Container } from 'react-bootstrap';
+import FormCode from '../../Components/Actions/FormCode';
 import { YMaps, Map } from 'react-yandex-maps';
 
 const style = {
@@ -12,9 +13,13 @@ const style = {
   height: '100%',
 };
 
-
-const Contacts = () => {
-  return (
+class Contacts extends React.Component {
+  submit = (values) => {
+    alert("submitted");
+    console.log(values);
+  }
+  render() {
+    return (
     <>
       <div className={s.pageTitle}>
         <div className={s.center}>
@@ -49,6 +54,11 @@ const Contacts = () => {
           <p> amf996@yandex.by </p>
           </div>
       </Container>
+      <Container style={{ width:'50%'}}>
+          <FormCode onSubmit={this.submit} />
+      </Container> 
+{/* 
+      
         <Container style={{ width:'50%'}}>
           <Form>
             <Form.Group controlId='formBasicEmail'>
@@ -64,8 +74,8 @@ const Contacts = () => {
             </Form.Group>
            
             <Button className={p.button}>Отравить</Button>
-          </Form>
-        </Container>
+          </Form> 
+        </Container> */}
      </div>
       <div style={{ width: '100%', height: '400px', position: 'relative' }}>
         <YMaps >
@@ -75,5 +85,5 @@ const Contacts = () => {
     </>
   )
 }
-
+}
 export default Contacts;

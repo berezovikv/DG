@@ -5,7 +5,7 @@ import Sky from '../assets/2.jpg';
 import Sk from '../assets/3.jpg';
 
 
-export default class CarouselBox extends Component {
+export default class CarouselBox1 extends Component {
     render () {
         return (
             <Carousel indicators={false}>
@@ -30,7 +30,7 @@ export default class CarouselBox extends Component {
                     alt = 'fly'
                     />
                 </Carousel.Item>
-              
+                
             </Carousel>
            
         )

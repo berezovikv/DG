@@ -4,26 +4,39 @@ import icon1 from '../../assets/icon/1.png';
 import icon2 from '../../assets/icon/2.png';
 import icon3 from '../../assets/icon/3.png';
 import icon4 from '../../assets/icon/4.png';
-import mac from './mac.png';
 import CarouselBox from '../../Components/CarouselBox';
-
+import CarouselBox1 from '../../Components/CarouselBox1';
+import CarouselBox2 from '../../Components/CarouselBox2';
 
 const Home = () => {
   return (
     <>
+ 
     <CarouselBox />
+
       <div className={s.main}>
-      <div className={s.products}>
-        <div className={s.productInfo}>
-          <div className={s.productInfoText}>
-          <h1>О нас</h1>
-          <p>Our company is your one stop solution for all needs. There is no doubt that we are the leaders and you don’t have to worry about our image because it is perfect. A great number of different grateful clients is the best proof of the previous statement.</p>
-          <button className={s.button}><span>Reade More</span></button>
+        <div className={s.products}>
+          <div className={s.productInfo}>
+            <div className={s.productInfoText}>
+            <h1>О НАС</h1>
+            <p>
+            Наша компания находится в городе Минске. Компания была основана в июне 2014г. Наша компания 
+            специализируется на разработке и производстве систем отображения информации, систем дополненной 
+            реальности, ЭВМ для жестких условий эксплуатации.
+            </p>
+            <button className={s.button}>
+             <span>Подробнее</span>
+            </button>
+            </div>
+          </div>
+          <div  className={s.productInfo}>
+            <CarouselBox1 />
           </div>
         </div>
-        <div  className={s.productInfo}><img src={mac} width="500" height="500" className={s.mac}/></div>
       </div>
-      </div>
+
+
+
       <div className={s.service}>
        
           <h1>НАПРАВЛЕНИЯ ДЕЯТЕЛЬНОСТИ</h1>
@@ -36,7 +49,6 @@ const Home = () => {
               <p> Разработка и производство систем отображения информации специального назначения</p>
               </div> 
             </div>
-           
           </div>
         
           <div className={s.infoItemBlock}>
@@ -45,7 +57,6 @@ const Home = () => {
               <p>Участие в новых проектах, научно-исследовательских и опытно-конструкторских работах</p>
               </div> 
             </div>
-           
           </div>
 
           <div className={s.infoItemBlock}>
@@ -54,7 +65,6 @@ const Home = () => {
               <p>Проведение широкого спектра испытаний любой сложности и продолжительности</p>
               </div> 
             </div>
-           
           </div>
 
           <div className={s.infoItemBlock}>
@@ -63,23 +73,26 @@ const Home = () => {
               <p>3D Моделирование и оформление конструкторской документации </p>
               </div> 
             </div>
-           
           </div>
-          
-      
-
         </div>
-
 
       </div>
       <div className={s.main}>
       <div className={s.products}>
-        <div  className={s.productInfo}><img src={mac} width="500" height="500" className={s.mac}/></div>
+        <div  className={s.productInfo}>
+        <CarouselBox2 />
+        </div>
         <div className={s.productInfo}>
           <div className={s.productInfoText}>
-          <h1>Продукция</h1>
-          <p>Our company is your one stop solution for all needs. There is no doubt that we are the leaders and you don’t have to worry about our image because it is perfect. A great number of different grateful clients is the best proof of the previous statement.</p>
-          <button className={s.button}><span>Reade More</span></button>
+          <h1>НАШИ РАЗРАБОТКИ</h1>
+          <p>
+          Разработанные нами видеомодули позволяют выводить информацию при любых погодных условиях, будь то 
+          холод севера или при ярком солнце в пустыне, а используя совместно с ЭВМ специального назначения, 
+          позволит выполнять любую поставленную задачу.
+          </p>
+          <button className={s.button}>
+          <span>Подробнее</span>
+          </button>
           </div>
         </div>
       </div>

@@ -7,14 +7,16 @@
 }
 
 .item{
-	flex:1 1 calc(30% - 30px);
+	flex:1 1 calc(50% - 30px);
 	margin:5px;
 	box-sizing:border-box; 
 	border-radius: 2px;
-	min-width:170px; 
+	min-width:200px; 
 	text-align:center; 
 	background-color: white;
 	box-shadow: 0 0 2px  #92cbe6;
+	padding: 20px;
+	
 }
 
 

@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
 import Carousel from 'react-bootstrap/Carousel'
-import Fly from '../assets/1.jpg';
-import Sky from '../assets/2.jpg';
-import Sk from '../assets/3.jpg';
+import Fly from '../assets/imgProduct/1.JPG';
+import Sky from '../assets/imgProduct/2.JPG';
+import Sk from '../assets/imgProduct/3.JPG';
 
 
-export default class CarouselBox extends Component {
+export default class CarouselBox2 extends Component {
     render () {
         return (
             <Carousel indicators={false}>
@@ -30,7 +30,7 @@ export default class CarouselBox extends Component {
                     alt = 'fly'
                     />
                 </Carousel.Item>
-              
+               
             </Carousel>
            
         )

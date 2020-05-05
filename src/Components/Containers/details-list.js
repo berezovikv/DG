@@ -17,7 +17,7 @@ class Details extends Component {
                 <div><img src={this.props.model.img}/></div>
                 <div className={s.textImg}>
                     <h3>Описание</h3>
-                    {this.props.model.text}}
+                    {this.props.model.text}
                 </div>
                 </div>
 

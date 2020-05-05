@@ -3,9 +3,15 @@
     display:  block;
 } 
 
-h1{
-    padding: 30px 30px;
-    text-align: center;
+.center {
+    display: flex;
+    margin: 0 auto;
+    max-width: 1200px;
+
+}
+       
+.service h1 {
+text-align: center;
 }
 
 .infoBlocks{
@@ -43,7 +49,7 @@ h1{
     left: 0;
     color: white;
   }
-  p, img {
+p, img {
     position: relative;
   }
 
@@ -55,7 +61,6 @@ h1{
 p {
     text-align: justify;
 }
-
 .leftimg {
     float: left;
     margin: 10px 20px 10px 0;
@@ -64,6 +69,8 @@ p {
 .main {
     background-color: white;
     display:  block;
+    padding-top: 100px;
+    padding-bottom: 100px;
 
 }
 .products {
@@ -78,12 +85,8 @@ p {
     margin: 15px;
     text-align: center; 
 }
-.productInfoText{
-    margin-top: 17%;
-}
+
 .productInfoText p {
-    padding-left: 100px;
-    padding-right: 100px;
     margin-bottom: 30px;
 }
 .button{
@@ -125,4 +128,12 @@ p {
     opacity: 1;
     right: 0;
   }
- 
+ ul {
+    list-style-type: none;
+    font-size: 18px;
+}
+
+li:before {
+    list-style-type: none;
+}
+

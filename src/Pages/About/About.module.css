@@ -24,13 +24,14 @@
     text-align: center; 
 }
 
-h1 {
+.centerUl h1 {
     font-size: 40px;
     color: black;
+    text-align: center;
    
 }
 .centerUl {
-    display: flex;
+    display: block;
     margin: 0 auto;
     max-width: 1200px;
     padding-top: 10px;
@@ -40,14 +41,16 @@ h1 {
 ul {
     list-style-type: none;
     font-size: 18px;
+    padding-left: 60px;
+    
 }
 
-li:before {
+.centerUl li:before {
     content: "✓ "; 
     color: #92cbe6;
     font-weight: bold;
     font-size: 30px;
-    padding-right: 10px;
+   
 }
 .main {
     background-color: white;
