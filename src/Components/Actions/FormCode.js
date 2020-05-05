@@ -3,20 +3,16 @@ import { Field, reduxForm } from 'redux-form';
 
 const validate = values => {
     const errors = {}
-    if (!values.firstName) {
-      errors.firstName = 'Required'
-    } else if (values.firstName.length < 2) {
-      errors.firstName = 'Minimum be 2 characters or more'
-    }
+
     if (!values.email) {
-      errors.email = 'Required'
+      errors.email = 'Введите E-mail'
     } else if (!/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i.test(values.email)) {
-      errors.email = 'Invalid email address'
+      errors.email = 'Введите корректный E-mail'
     }
     if (!values.text) {
-        errors.text= 'Required'
-      } else if (values.text.length < 2) {
-        errors.text = 'Minimum be 2 characters or more'
+        errors.text= 'Введите текст сообешния'
+      } else if (values.text.length > 50) {
+        errors.text = 'Введите сообщение'
       }
     return errors
   }
@@ -24,7 +20,16 @@ const validate = values => {
     <div>
       <label className="control-label">{label}</label>
       <div>
-        <input {...input} placeholder={label} type={type} className="form-control" />
+        <input {...input} type={type} className="form-control" />
+        {touched && ((error && <span className="text-danger">{error}</span>) || (warning && <span>{warning}</span>))}
+      </div>
+    </div>
+  )
+  const renderField1 = ({ input, label, type, meta: { touched, error, warning } }) => (
+    <div>
+      <label className="control-label">{label}</label>
+      <div>
+        <textarea {...input} rows='5' type={type} className="form-control" />
         {touched && ((error && <span className="text-danger">{error}</span>) || (warning && <span>{warning}</span>))}
       </div>
     </div>
@@ -33,16 +38,15 @@ const validate = values => {
 let FormCode = props => {
   const { handleSubmit, pristine, submitting } = props;
   return (
+    
     <form onSubmit={ handleSubmit }>
-      <div className="form-group">
-        <Field name="firstName" component={renderField} label="First Name" />
+        <div className="form-group">
+        <Field name="email" component={renderField} label="E-mail" />
       </div>
       <div className="form-group">
-        <Field name="text" component={renderField} label="Text"  as="textarea" rows="3"/>
+        <Field name="text" component={renderField1} label="Комментарий"/>
       </div>
-      <div className="form-group">
-        <Field name="email" component={renderField} label="Email" />
-      </div>
+    
       <div className="form-group">
         <button type="submit" disabled={pristine || submitting} className="btn btn-primary">Отправить</button>
       </div>

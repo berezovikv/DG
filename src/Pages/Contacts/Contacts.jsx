@@ -57,25 +57,6 @@ class Contacts extends React.Component {
       <Container style={{ width:'50%'}}>
           <FormCode onSubmit={this.submit} />
       </Container> 
-{/* 
-      
-        <Container style={{ width:'50%'}}>
-          <Form>
-            <Form.Group controlId='formBasicEmail'>
-              <Form.Label>E-mail</Form.Label>
-              <Form.Control type='email' placeholder='Enter email' />
-            </Form.Group>
-            <Form.Group controlId='formBasicEmail'>
-              <Form.Label> Комментарий </Form.Label>
-              <Form.Control as='textarea' rows='3' />
-            </Form.Group>
-            <Form.Group controlId='formBasicCheckbox'>
-              <Form.Check type='checkbox' label='check me out' />
-            </Form.Group>
-           
-            <Button className={p.button}>Отравить</Button>
-          </Form> 
-        </Container> */}
      </div>
       <div style={{ width: '100%', height: '400px', position: 'relative' }}>
         <YMaps >
