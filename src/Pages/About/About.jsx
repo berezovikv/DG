@@ -67,8 +67,9 @@ export default class About extends Component {
      
        
           <img src={sam} width='100%' className={s.sam} />
-        
+     .   
         <div className={s.centerUl}>
+        
         <h1>НАПРАВЛЕНИЯ ДЕЯТЕЛЬНОСТИ </h1>
           <ul> 
             <li>Pазработка и производство систем отображения информации (сои) для специальной техники;</li>

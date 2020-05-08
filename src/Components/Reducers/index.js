@@ -6,7 +6,7 @@ import ActiveModel from './model-active'
 const allReducers = combineReducers ({
     models: ModelReducers, 
     active: ActiveModel,
-    form: formReducer
+    form: formReducer,
 });
 
 export default allReducers;
