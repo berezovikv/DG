@@ -100,5 +100,15 @@ ul {
   .flex { flex-grow:1; }
   
   
+  @media  (max-width: 992px) {
 
+    .flex {
+        display: block;
+      
+        
+      }
+      .flex .item {
+        margin: 0 auto;
+      }
+  }
  

@@ -1,6 +1,14 @@
 * {
     font-size: 18px;
 }
+.center {
+    display: flex;
+    margin: 0 auto;
+    max-width: 1200px;
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+
 .ourAddress {
     border-left: 3px solid#92cbe6;
     margin: 20px;
@@ -27,3 +35,15 @@
     margin: 5px;
 }
 
+ 
+@media  (max-width: 992px) {
+
+    .center {
+        display: block;
+        margin: 0 auto;
+        max-width: 1200px;
+        padding-bottom: 20px;
+        padding-top: 20px;
+    }
+  }
+ 
