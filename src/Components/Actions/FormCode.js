@@ -1,6 +1,7 @@
 import React from 'react';
 import { Field, reduxForm } from 'redux-form';
 
+
 const validate = values => {
     const errors = {}
 
@@ -48,7 +49,7 @@ let FormCode = props => {
       </div>
     
       <div className="form-group">
-        <button type="submit" disabled={pristine || submitting} className="btn btn-primary">Отправить</button>
+        <button type="submit" className='button' disabled={pristine || submitting}> Отправить </button>
       </div>
     </form>
   )

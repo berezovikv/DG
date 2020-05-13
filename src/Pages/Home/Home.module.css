@@ -18,45 +18,6 @@
 .productInfoText p {
     margin-bottom: 30px;
 }
-.button{
-    display: inline-block;
-    border-radius: 4px;
-    background-color: #92cbe6;
-    border: none;
-    color: #FFFFFF;
-    text-align: center;
-    font-size: 20px;
-    padding: 15px;
-    width: 200px;
-    transition: all 0.5s;
-    cursor: pointer;
-    margin: 5px;
-}
-
-.button span {
-    cursor: pointer;
-    display: inline-block;
-    position: relative;
-    transition: 0.5s;
-  }
-
-.button span:after {
-    content: '»';
-    position: absolute;
-    opacity: 0;
-    top: 0;
-    right: -20px;
-    transition: 0.5s;
-  }
-  
-  .button:hover span {
-    padding-right: 25px;
-  }
-  
-  .button:hover span:after {
-    opacity: 1;
-    right: 0;
-  }
   
 .service {
     padding-bottom: 40px;
@@ -74,7 +35,6 @@ text-align: center;
     margin: 0 auto; 
 }
 .infoImgTitle  p {
-
     color: black;
 }
 .infoImgTitle a {
@@ -136,6 +96,10 @@ li:before {
     list-style-type: none;
 }
 
+.productInfo .laba {
+    width: 100%;
+    height: 100%;
+}
 @media  (max-width: 992px) {
 
 .main {
@@ -149,6 +113,17 @@ li:before {
 }
 .infoItemBlock{
 	flex:1 1 calc(100% - 30px); 
-	}
+} 
+    .leftimg {
+        float: left;
+        height: 50px;
+        width: 50px;
+        margin: 10px 20px 10px 0;
+    }
+    .service {
+        padding-bottom: 0px;
+       
+    } 
+    
 
 }

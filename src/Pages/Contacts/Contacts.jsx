@@ -29,14 +29,10 @@ class Contacts extends React.Component {
           </div>
         </div>
 
-        <div className={s.center}>
-          <div className={p.ourAddress}>
-            <h2> НАШ АДРЕС:</h2>
-          </div>
-        </div>
-
+        
         <div className={p.center}>
-          <Container >
+          <Container style={{ padding:'20px', margin: 'auto'}} >
+          <h2> Наш адрес:</h2><br/>
             <div className={p.name}>
               <b>Полное название:</b>
               <p> Общество с ограниченной ответственностью "Дисплей гласс"</p>
@@ -53,10 +49,15 @@ class Contacts extends React.Component {
             </div>
             <div className={p.emailAddress}>
               <b>Моб. телефон:</b>
-              <p> amf996@yandex.by </p>
+              <p>
+                <a href="mailto:amf996@yandex.by">
+                  amf996@yandex.by 
+                </a>
+              </p>
             </div>
           </Container>
-          <Container >
+          <Container  style={{ padding:'20px', margin: '0 auto'}}>
+          <h2>Обратная связь</h2><br/>
             <FormCode onSubmit={this.submit} />
           </Container>
         </div>

@@ -1,22 +1,20 @@
-
-.center {
-    display: flex;
-    margin: 0 auto;
-  
+h3 {
+	text-align: center;
+	padding: 10px;
 }
-
-.pageTitle h1 {
-    float: left;
-    line-height: 150px;
+.col3 {
+	max-width: 25%;
 }
-.module  {
-	box-shadow: 0 0 2px  #92cbe6;
-	padding: 20px;
-	width: 20%;
-
+.col9 {
+	max-width: 75%;
 }
-.details {
-	box-shadow: 0 0 2px  #92cbe6;
-	padding: 20px;
-	width: 80%;
+@media  (max-width: 1000px) {
+.row {
+	display: inline-block;
+}
+.col3{ 
+	
+	max-width: 100%;
+}
+	
 }

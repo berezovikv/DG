@@ -31,7 +31,47 @@
     padding-top: 35px;
     padding-left: 20px;
     padding-right: 20px;
+    text-align: justify;
 }
-.tabel {
-    padding-bottom: 20px;
+
+.Nav {
+    display: flex;
+	flex-wrap: wrap;
+}
+.Item {
+    flex:1 1 calc(100% - 30px);
+    margin: 0.5%;
+    background-color: #e1edf3;
+    border-radius: 2px;
+    
+   
+}
+.Item:active {
+    outline: none;
+    top: .1em;
+    left: .1em;
+    box-shadow: 0 0 0 60px rgba(235, 231, 231, 0.05) inset;
+
+}
+
+@media  (max-width: 1000px) {
+    .allInf  {
+        display: block;
+    }
+    .img {
+        text-align: center;
+    }
+    
+    img {
+        height: 50%;
+        width: 50%;
+        justify-content: center;
+       
+    }
+    .textImg {
+        padding: 0px;
+        padding-bottom: 20px;
+    }
+
+  
 }

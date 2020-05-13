@@ -1,10 +1,14 @@
 import React, { Component } from 'react';
 import { Container } from 'react-bootstrap';
 import s from './About.module.css';
-import sam from '../../assets/sam.jpg';
+
 import icon1 from '../../assets/iconAbout/1.png';
 import icon2 from '../../assets/iconAbout/2.png';
 import icon3 from '../../assets/iconAbout/3.png';
+
+import laba1 from '../../assets/laba/1.JPG';
+import laba2 from '../../assets/laba/2.JPG';
+import laba3 from '../../assets/laba/3.JPG';
 
 
 
@@ -33,6 +37,16 @@ export default class About extends Component {
               позволяющие выполнять любую работу, связанную с дисплеями.
           </p>
           </div>
+
+          <div className={s.laba}>
+          
+            <img src={laba1} />
+                   
+            <img src={laba2}/>
+          
+           <img src={laba3}/>
+          
+        </div>
           
           <div className={s.centerUl}>
             <h1>НАШИ ПРЕИМУЩЕСТВА </h1>
@@ -64,8 +78,7 @@ export default class About extends Component {
             </div>
           </div>
 
-
-          <img src={sam} width='100%' className={s.sam} />
+        
      .
         <div className={s.centerUl}>
 
