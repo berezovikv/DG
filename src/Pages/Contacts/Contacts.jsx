@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import s from '../About/About.module.css';
 import p from './Contacts.module.css';
 import { Container } from 'react-bootstrap';
