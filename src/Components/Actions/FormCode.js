@@ -1,5 +1,18 @@
 import React from 'react';
 import { Field, reduxForm } from 'redux-form';
+import axios from "axios";
+
+export default axios.create({
+  baseURL: "https://randomuser.me/api/",
+  responseType: "json"
+});
+
+try {
+  const response = await axios.post('http://demo0725191.mockable.io/post_data', { posted_data: 'example' });
+  console.log('👉 Returned data:', response);
+} catch (e) {
+  console.log(`😱 Axios request failed: ${e}`);
+}
 
 
 const validate = values => {
@@ -17,6 +30,9 @@ const validate = values => {
       }
     return errors
   }
+
+
+
   const renderField = ({ input, label, type, meta: { touched, error, warning } }) => (
     <div>
       <label className="control-label">{label}</label>
@@ -26,6 +42,9 @@ const validate = values => {
       </div>
     </div>
   )
+
+
+
   const renderField1 = ({ input, label, type, meta: { touched, error, warning } }) => (
     <div>
       <label className="control-label">{label}</label>
@@ -36,8 +55,12 @@ const validate = values => {
     </div>
   )
 
+  
+
 let FormCode = props => {
   const { handleSubmit, pristine, submitting } = props;
+
+
   return (
     
     <form onSubmit={ handleSubmit }>

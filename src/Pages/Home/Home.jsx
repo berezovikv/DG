@@ -29,8 +29,8 @@ const Home = () => {
                   чистой зоной, соответствующей классу чистоты ISO6 и ISO7, позволяющие выполнять любую работу, 
                   связанную с дисплеями.
                 </p>
-                <Link to='/about'>
-                  <button className='button'>
+                <Link to='/about' onClick={() => {window.scrollTo(0, 0);}}> 
+                  <button className="btn btn-secondary">
                     <span>Подробнее</span>
                   </button>
                 </Link>
@@ -47,7 +47,7 @@ const Home = () => {
             <div className={s.infoItemBlock}>
               <div className={s.infoImgTitle}>
                 <div className={s.infoTitle}> <img src={icon1} width="50" height="50" className={s.leftimg} />
-                  <Link to='/service'>
+                  <Link to='/service' onClick={() => {window.scrollTo(0, 0);}}>
                     <p> Разработка и производство систем отображения информации специального назначения</p>
                   </Link>
                 </div>
@@ -56,7 +56,7 @@ const Home = () => {
             <div className={s.infoItemBlock}>
               <div className={s.infoImgTitle}>
                 <div className={s.infoTitle}> <img src={icon2} width="50" height="50" className={s.leftimg} />
-                  <Link to='/service'>
+                  <Link to='/service' onClick={() => {window.scrollTo(0, 0);}}>
                     <p>Участие в новых проектах, научно-исследовательских и опытно-конструкторских работах</p>
                   </Link>
                 </div>
@@ -65,7 +65,7 @@ const Home = () => {
             <div className={s.infoItemBlock}>
               <div className={s.infoImgTitle}>
                 <div className={s.infoTitle}> <img src={icon3} width="50" height="50" className={s.leftimg} />
-                  <Link to='/service'>
+                  <Link to='/service' onClick={() => {window.scrollTo(0, 0);}}>
                     <p>Проведение широкого спектра испытаний любой сложности и продолжительности</p>
                   </Link>
                 </div>
@@ -74,7 +74,7 @@ const Home = () => {
             <div className={s.infoItemBlock}>
               <div className={s.infoImgTitle}>
                 <div className={s.infoTitle}> <img src={icon4} width="50" height="50" className={s.leftimg} />
-                  <Link to='/service'>
+                  <Link to='/service' onClick={() => {window.scrollTo(0, 0);}}>
                     <p>3D Моделирование и оформление конструкторской документации </p>
                   </Link>
                 </div>
@@ -95,8 +95,8 @@ const Home = () => {
                   холод севера или при ярком солнце в пустыне, а используя совместно с ЭВМ специального назначения,
                   позволит выполнять любую поставленную задачу.
                 </p>
-                <Link to='/about'>
-                  <button className='button'>
+                <Link to='/product' onClick={() => {window.scrollTo(0, 0);}}>
+                  <button className="btn btn-secondary">
                     <span>Подробнее</span>
                   </button>
                 </Link>

@@ -1,5 +1,36 @@
-.nav {
-    font-size: 20px;
-    padding: 20px 20px;
-    margin-left: 30px;
+.navBrand a {
+    text-decoration: none;
+    font-weight: bold;
+    letter-spacing: 0.3px;
+    color: black;
+    font-size: 35px;
+    font-weight: 500;
+
 }
+.item a {
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.3px;
+    color: black;
+    font-size: 17px;
+    text-decoration: none;
+    margin-left: 50px;
+
+}
+.item a.activeLink {
+    font-weight: bold;
+    color:  #92cbe6;
+}
+
+@media  (max-width: 992px) {
+   
+    .nav {
+        display: block;
+        text-align: center;
+        padding-bottom: 10px;
+        padding-top: 10px;
+    }
+
+} 
+        
+    

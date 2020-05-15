@@ -2,7 +2,7 @@ import React from 'react';
 import s from '../About/About.module.css';
 import p from './Contacts.module.css';
 import { Container } from 'react-bootstrap';
-import FormCode from '../../Components/Actions/FormCode';
+import { Forma} from '../../Components/Actions/FormComponent/Form.jsx';
 import { YMaps, Map } from 'react-yandex-maps';
 
 const style = {
@@ -58,7 +58,7 @@ class Contacts extends React.Component {
           </Container>
           <Container  style={{ padding:'20px', margin: '0 auto'}}>
           <h2>Обратная связь</h2><br/>
-            <FormCode onSubmit={this.submit} />
+            <Forma  />
           </Container>
         </div>
         <div style={{ width: '100%', height: '400px', position: 'relative' }}>

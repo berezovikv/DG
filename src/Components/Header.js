@@ -1,46 +1,36 @@
 import React, { Component } from 'react';
 import { Navbar, Nav, Container } from 'react-bootstrap';
 import s from './Header.module.css';
-
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
-
-import Home from '../Pages/Home/Home';
-import About from '../Pages/About/About';
-import Product from '../Pages/Product/Product';
-import Service from '../Pages/Service/Service';
-import Contacts from '../Pages/Contacts/Contacts';
+import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 
 
-export default class Header extends Component {
+
+export class Header extends Component {
     render () {
         return (
             <>
             <Navbar  collapseOnSelect expand='lg' bg='light' font-size="20px" >
                 <Container>
-                    <Navbar.Brand>
-                        Display Glass
+                    <Navbar.Brand className={s.navBrand}>
+                    <Link to='/'>Display Glass
+                    </Link>
                     </Navbar.Brand>
                     <Navbar.Toggle aria-controls='responsive-navbar-nav'/>
                     <Navbar.Collapse id='responsive-navbar-nav'>
                         <Nav className="ml-auto">
-                        <Nav.Link className={s.nav} href="/">Главная</Nav.Link>
-                        <Nav.Link className={s.nav} href="/about">О нас</Nav.Link>
-                        <Nav.Link className={s.nav} href="/product">Наши разработки</Nav.Link>
-                        <Nav.Link className={s.nav} href="/service">Услги</Nav.Link>
-                        <Nav.Link className={s.nav} href="/contacts">Контакты</Nav.Link>
+                        <div className={`${s.item} ${s.active} ${s.nav}`}>
+                            <NavLink className={s.nav} activeClassName={s.activeLink} exact to="/">Главная</NavLink>
+                            <NavLink className={s.nav} activeClassName={s.activeLink} exact to="/about">О нас</NavLink>
+                            <NavLink className={s.nav} activeClassName={s.activeLink} exact to="/product">Наши разработки</NavLink>
+                            <NavLink className={s.nav} activeClassName={s.activeLink} exact to="/service">Услги</NavLink>
+                            <NavLink className={s.nav} activeClassName={s.activeLink}exact to="/contacts">Контакты</NavLink>
+                        </div>
                         </Nav>
                     </Navbar.Collapse>
                 </Container>
             </Navbar>
-            <Router>
-                <Switch>
-                    <Route exact path='/' component={Home} />
-                    <Route exact path='/about' component={About} />
-                    <Route exact path='/product' component={Product} />
-                    <Route exact path='/service' component={Service} />
-                    <Route exact path='/contacts' component={Contacts} />                        
-                </Switch>
-            </Router>
+         
 
             </>
         )
