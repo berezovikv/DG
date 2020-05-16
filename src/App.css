@@ -47,5 +47,7 @@ li:before {
   box-shadow: 0 0 0 60px rgba(0,0,0,.05) inset;
 }
 
-
+.main {
+  min-height: 100vh
+}
 

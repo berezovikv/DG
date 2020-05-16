@@ -28,7 +28,7 @@
     display: flex;
 }
 .textImg {
-    padding-top: 35px;
+   
     padding-left: 20px;
     padding-right: 20px;
     text-align: justify;
@@ -36,7 +36,8 @@
 
 .Nav {
     display: flex;
-	flex-wrap: wrap;
+    flex-wrap: wrap;
+    height: auto;
 }
 .Item {
     flex:1 1 calc(100% - 30px);
@@ -54,24 +55,22 @@
 
 }
 
+
 @media  (max-width: 1000px) {
     .allInf  {
         display: block;
     }
-    .img {
-        text-align: center;
-    }
-    
-    img {
-        height: 50%;
-        width: 50%;
-        justify-content: center;
-       
-    }
+
     .textImg {
         padding: 0px;
         padding-bottom: 20px;
     }
 
-  
+    .MenuItem {
+        display: inline-block;
+        text-align: center;
+    }
+    .Item {
+        width: 100%;
+    }
 }

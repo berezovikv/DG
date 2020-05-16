@@ -13,11 +13,10 @@ class Details extends Component {
             <>
                 <h2 className={s.model}>{this.props.model.model}</h2>
                  <div className={s.allInf}>
-                    <div className={s.img}>
-                        <img src={this.props.model.img}/>
+                    <div >
+                    
                     </div>
                 <div className={s.textImg}>
-                    <h3>Описание</h3>
                     {this.props.model.text}
                 </div>
                 </div>

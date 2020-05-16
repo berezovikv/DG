@@ -10,7 +10,7 @@ const Service = () => {
       <div className={s.pageTitle}>
         <div className={s.center}>
           <Container>
-            <h1> Наши услуги</h1>
+            <h1> Услуги</h1>
           </Container>
         </div>
       </div>

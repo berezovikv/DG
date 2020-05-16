@@ -37,7 +37,7 @@ const Home = () => {
               </div>
             </div>
             <div className={s.productInfo}>
-            <img src={laba} className={s.laba}/>
+            <img src={laba} className={s.laba}  alt="laba"/>
             </div>
           </div>
         </div>
@@ -46,7 +46,7 @@ const Home = () => {
           <div className={s.infoBlocks}>
             <div className={s.infoItemBlock}>
               <div className={s.infoImgTitle}>
-                <div className={s.infoTitle}> <img src={icon1} width="50" height="50" className={s.leftimg} />
+                <div className={s.infoTitle}> <img src={icon1} width="50" height="50" className={s.leftimg} alt='ico' />
                   <Link to='/service' onClick={() => {window.scrollTo(0, 0);}}>
                     <p> Разработка и производство систем отображения информации специального назначения</p>
                   </Link>
@@ -55,7 +55,7 @@ const Home = () => {
             </div>
             <div className={s.infoItemBlock}>
               <div className={s.infoImgTitle}>
-                <div className={s.infoTitle}> <img src={icon2} width="50" height="50" className={s.leftimg} />
+                <div className={s.infoTitle}> <img src={icon2} width="50" height="50" className={s.leftimg}  alt='ico' />
                   <Link to='/service' onClick={() => {window.scrollTo(0, 0);}}>
                     <p>Участие в новых проектах, научно-исследовательских и опытно-конструкторских работах</p>
                   </Link>
@@ -64,7 +64,7 @@ const Home = () => {
             </div>
             <div className={s.infoItemBlock}>
               <div className={s.infoImgTitle}>
-                <div className={s.infoTitle}> <img src={icon3} width="50" height="50" className={s.leftimg} />
+                <div className={s.infoTitle}> <img src={icon3} width="50" height="50" className={s.leftimg}  alt='ico'  />
                   <Link to='/service' onClick={() => {window.scrollTo(0, 0);}}>
                     <p>Проведение широкого спектра испытаний любой сложности и продолжительности</p>
                   </Link>
@@ -73,7 +73,7 @@ const Home = () => {
             </div>
             <div className={s.infoItemBlock}>
               <div className={s.infoImgTitle}>
-                <div className={s.infoTitle}> <img src={icon4} width="50" height="50" className={s.leftimg} />
+                <div className={s.infoTitle}> <img src={icon4} width="50" height="50" className={s.leftimg}  alt='ico' />
                   <Link to='/service' onClick={() => {window.scrollTo(0, 0);}}>
                     <p>3D Моделирование и оформление конструкторской документации </p>
                   </Link>

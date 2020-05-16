@@ -17,11 +17,13 @@ function App() {
    <div>
      <HashRouter>
      <Header />
+     <div className='main'>
         <Route exact path="/" render={()=><Home/>}/>
         <Route exact  path="/about" render={()=><About/>}/>
         <Route exact path="/product" render={()=><Product/>}/>
         <Route exact path="/service" render={()=><Service/>}/>
         <Route path="/contacts" render={()=><Contacts/>}/>
+      </div>
      <Footer />
      </HashRouter>
 

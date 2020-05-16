@@ -8,6 +8,7 @@ h3 {
 .col9 {
 	max-width: 75%;
 }
+
 @media  (max-width: 1000px) {
 .row {
 	display: inline-block;

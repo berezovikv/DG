@@ -9,6 +9,7 @@ import { Col, Row, Tab } from 'react-bootstrap';
 
 
 
+
 const Product = () => (
   <>
     <div className={s.pageTitle}>
@@ -27,9 +28,9 @@ const Product = () => (
             <h3> Модули</h3>
 
             <ModuleList />
-
+      
           </Col>
-          <Col >
+          <Col style={{paddingTop:"10px"}}>
             <Details />
           </Col>
         </Row>

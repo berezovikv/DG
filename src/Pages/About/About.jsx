@@ -40,11 +40,11 @@ export default class About extends Component {
 
           <div className={s.laba}>
           
-            <img src={laba1} />
+            <img src={laba1}  alt='laba1' />
                    
-            <img src={laba2}/>
+            <img src={laba2} alt='laba2' />
           
-           <img src={laba3}/>
+           <img src={laba3} alt='laba3' />
           
         </div>
           
@@ -53,7 +53,7 @@ export default class About extends Component {
             <div className={s.flex}>
               <div className={s.item}>
                 <div className={s.icon}>
-                  <img src={icon1} width="80" height="80" className={s.leftimg} />
+                  <img src={icon1} width="80" height="80" className={s.leftimg} alt='ico1' />
                 </div>
                 <div className={s.text}>
                   Высокое качество
@@ -61,7 +61,7 @@ export default class About extends Component {
               </div>
               <div className={s.item}>
                 <div className={s.icon}>
-                  <img src={icon2} width="80" height="80" className={s.leftimg} />
+                  <img src={icon2} width="80" height="80" className={s.leftimg} alt='ico2'/>
                 </div>
                 <div className={s.text}>
                   Расширенная гарантия
@@ -69,7 +69,7 @@ export default class About extends Component {
               </div>
               <div className={s.item}>
                 <div className={s.icon}>
-                  <img src={icon3} width="80" height="80" className={s.leftimg} />
+                  <img src={icon3} width="80" height="80" className={s.leftimg} alt='ico3' />
                 </div>
                 <div className={s.text}>
                   Индивидуальный подход
